@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9682a72f-b7ce-49e5-aefb-f005b4c9ce8f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>sotd_snimation.py</StartupFile>
+    <StartupFile>sotd_animation.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="sotd_snimation.py" />
+    <Compile Include="sotd_animation.py" />
     <Compile Include="sprite_manager.py">
       <SubType>Code</SubType>
     </Compile>
