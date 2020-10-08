@@ -1,6 +1,6 @@
 import turtle
 
-quit=False
+QUIT_GAME=False
 
 #Define the screen
 wn = turtle.Screen()
@@ -9,8 +9,8 @@ wn.title("Shaun of the Dead")
 wn.setup(700,700)
 
 def quit_game():
-    global quit
-    quit = True
+    global QUIT_GAME
+    QUIT_GAME = True
 
 
 #Listen to keyboard input
@@ -24,7 +24,7 @@ turtle.onkey(quit_game,'q')
 
 
 #main loop
-while not quit:
+while not QUIT_GAME:
     wn.update()
 
 wn.bye()
