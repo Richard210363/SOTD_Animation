@@ -1,2 +1,2 @@
-class SpriteManager(object):
+class SpriteManager():
     """description of class"""

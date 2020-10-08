@@ -1,2 +1,2 @@
-class SpriteSheetManager(object):
+class SpriteSheetManager():
     """description of class"""
