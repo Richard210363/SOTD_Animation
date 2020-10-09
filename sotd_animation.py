@@ -1,6 +1,10 @@
 import turtle
 
+import player_shaun
+
 QUIT_GAME=False
+
+player = player_shaun.PlayerShaun()
 
 #Define the screen
 wn = turtle.Screen()
@@ -21,7 +25,6 @@ turtle.listen()
 #turtle.onkey(self.player.go_down,'s')
 #turtle.onkey(self.fire_bullet,'f')
 turtle.onkey(quit_game,'q')
-
 
 #main loop
 while not QUIT_GAME:
