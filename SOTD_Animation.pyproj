@@ -21,11 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="player_shaun.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sotd_animation.py" />
     <Compile Include="sprite_manager.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="sprite_sheet_manager.py">
+    <Compile Include="sprite_list_manager.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,6 +36,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Shaun_Start.gif" />
     <Content Include="Resources\Shaun_v01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -1,4 +1,4 @@
-
+import os
 
 
 class SpriteListManager():
@@ -7,7 +7,7 @@ class SpriteListManager():
         pass
 
 
-def loadImagesToList(listname):
+def load_images_to_list(listname):
     if os.path.isfile(fileName):
         image = pygame.image.load(fileName)
         image = image.convert_alpha()
