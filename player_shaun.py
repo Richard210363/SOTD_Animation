@@ -1,13 +1,13 @@
+'''Player Module'''
+
 import turtle
 
 class PlayerShaun(turtle.Turtle):
+    '''Turtle of Player'''
     def __init__(self):
         turtle.Turtle.__init__(self)
 
         turtle.register_shape("Resources\\ShaunAnimation\\Shaun_Start.gif")
-
-
-
 
         self.x_cor=0
         self.y_cor=0
@@ -20,6 +20,7 @@ class PlayerShaun(turtle.Turtle):
 
     #Define Player Movement
     def go_up(self):
+        '''Move Player Turtle up in the game area'''
         move_to_x = self.xcor()
         move_to_y = self.ycor()+24
         self.goto(move_to_x,move_to_y)
@@ -28,6 +29,7 @@ class PlayerShaun(turtle.Turtle):
 
 
     def go_down(self):
+        '''Move Player Turtle down in the game area'''
         move_to_x = self.xcor()
         move_to_y = self.ycor()-24
         self.goto(move_to_x,move_to_y)
@@ -36,6 +38,7 @@ class PlayerShaun(turtle.Turtle):
 
 
     def go_left(self):
+        '''Move Player Turtle left in the game area'''
         move_to_x = self.xcor()-24
         move_to_y = self.ycor()
         self.goto(move_to_x,move_to_y)
@@ -43,11 +46,9 @@ class PlayerShaun(turtle.Turtle):
         self.direction="go_left"
 
     def go_right(self):
+        '''Move Player Turtle right in the game area'''
         move_to_x = self.xcor()+24
         move_to_y = self.ycor()
         self.goto(move_to_x,move_to_y)
-        self.shape("Resources\\Right_Facing_Shaun.gif")
+        self.shape("Resources\\ShaunAnimation\\Shaun_Right\\Shaun_Right_05.gif")
         self.direction="go_right"
-
-
-
