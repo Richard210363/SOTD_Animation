@@ -2,6 +2,7 @@
 
 import turtle
 import sprite_list_manager
+import constant
 
 class PlayerShaun(turtle.Turtle):
     '''Turtle of Player'''
@@ -22,7 +23,7 @@ class PlayerShaun(turtle.Turtle):
 
     def get_go_right_list(self):
         '''Preparing list for animation'''
-        self.go_right_list = sprite_list_manager.load_images("Resources\\ShaunAnimation\\Shaun_Right")
+        self.go_right_list = sprite_list_manager.load_images(constant.shaun_animation_right)
 
     def initialise(self):
         '''Prepares player for use'''
@@ -65,5 +66,5 @@ class PlayerShaun(turtle.Turtle):
             self.current_frame = 0
         else:
             self.current_frame = self.current_frame + 1
-        self.shape("Resources\\ShaunAnimation\\Shaun_Right\\" + filename)
+        self.shape(constant.shaun_animation_right + "\\" + filename)
         self.direction="go_right"

@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="constant.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="player_shaun.py">
       <SubType>Code</SubType>
     </Compile>
