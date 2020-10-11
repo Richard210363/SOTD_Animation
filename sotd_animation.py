@@ -3,12 +3,12 @@
 import turtle
 
 import player_shaun
-import sprite_list_manager
 
 QUIT_GAME=False
 
-spritelistmanager = sprite_list_manager.SpriteListManager()
+#spritelistmanager = sprite_list_manager.SpriteListManager()
 player = player_shaun.PlayerShaun()
+player.initialise()
 
 
 #Define the screen
@@ -25,10 +25,10 @@ def quit_game():
 
 #Listen to keyboard input
 turtle.listen()
-#turtle.onkey(self.player.go_left,"a")
+turtle.onkey(player.go_left,"a")
 turtle.onkey(player.go_right,'d')
-#turtle.onkey(self.player.go_up,'w')
-#turtle.onkey(self.player.go_down,'s')
+turtle.onkey(player.go_up,'w')
+turtle.onkey(player.go_down,'s')
 #turtle.onkey(self.fire_bullet,'f')
 turtle.onkey(quit_game,'q')
 
