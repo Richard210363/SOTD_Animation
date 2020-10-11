@@ -18,11 +18,11 @@ class PlayerShaun(turtle.Turtle):
         self.direction="go_down"
         self.goto(self.x_cor,self.y_cor)
         self.go_right_list = []
+        self.current_frame = 0
 
     def get_go_right_list(self):
         self.go_right_list = sprite_list_manager.load_images_to_list("Resources\\ShaunAnimation\\Shaun_Right")
-        pass
-
+        
     def initialise(self):
         self.get_go_right_list()
 
@@ -58,5 +58,10 @@ class PlayerShaun(turtle.Turtle):
         move_to_x = self.xcor()+24
         move_to_y = self.ycor()
         self.goto(move_to_x,move_to_y)
-        self.shape("Resources\\ShaunAnimation\\Shaun_Right\\Shaun_Right_05.gif")
+        filename = self.go_right_list[self.current_frame]
+        if self.current_frame == len(self.go_right_list) - 1:
+            self.current_frame = 0
+        else:
+            self.current_frame = self.current_frame + 1
+        self.shape("Resources\\ShaunAnimation\\Shaun_Right\\" + filename)
         self.direction="go_right"
