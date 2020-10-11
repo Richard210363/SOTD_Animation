@@ -3,7 +3,6 @@
 import turtle
 
 import player_shaun
-import sprite_list_manager
 
 QUIT_GAME=False
 

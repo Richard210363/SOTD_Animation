@@ -21,9 +21,11 @@ class PlayerShaun(turtle.Turtle):
         self.current_frame = 0
 
     def get_go_right_list(self):
-        self.go_right_list = sprite_list_manager.load_images_to_list("Resources\\ShaunAnimation\\Shaun_Right")
-        
+        '''Preparing list for animation'''
+        self.go_right_list = sprite_list_manager.load_images("Resources\\ShaunAnimation\\Shaun_Right")
+
     def initialise(self):
+        '''Prepares player for use'''
         self.get_go_right_list()
 
     #Define Player Movement
