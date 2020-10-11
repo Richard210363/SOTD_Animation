@@ -7,8 +7,9 @@ import sprite_list_manager
 
 QUIT_GAME=False
 
-spritelistmanager = sprite_list_manager.SpriteListManager()
+#spritelistmanager = sprite_list_manager.SpriteListManager()
 player = player_shaun.PlayerShaun()
+player.initialise()
 
 
 #Define the screen

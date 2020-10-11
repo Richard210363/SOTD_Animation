@@ -1,6 +1,7 @@
 '''Player Module'''
 
 import turtle
+import sprite_list_manager
 
 class PlayerShaun(turtle.Turtle):
     '''Turtle of Player'''
@@ -16,7 +17,14 @@ class PlayerShaun(turtle.Turtle):
         self.speed(0)
         self.direction="go_down"
         self.goto(self.x_cor,self.y_cor)
+        self.go_right_list = []
 
+    def get_go_right_list(self):
+        self.go_right_list = sprite_list_manager.load_images_to_list("Resources\\ShaunAnimation\\Shaun_Right")
+        pass
+
+    def initialise(self):
+        self.get_go_right_list()
 
     #Define Player Movement
     def go_up(self):
